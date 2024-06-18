@@ -1,0 +1,30 @@
+data:
+  num_features: 6
+  num_samples: 799
+  num_sequences: 5
+evaluation:
+  save_plots: true
+  show_plots: false
+  tags:
+  - train_error_epoch
+  - valid_error_epoch
+experiment: 0
+hyper_parameters:
+  batch_size: 10
+  learning_rate: 0.005
+  num_epochs: 50
+  objective: mse_loss
+  optimizer: Adam
+model:
+  hidden_size: 200
+  input_size: 6
+  num_layers: 2
+  type: LSTM
+paths:
+  results: results
+  version: 0
+system:
+  accelerator: gpu
+  num_devices: 1
+  num_workers: 24
+  strategy: auto

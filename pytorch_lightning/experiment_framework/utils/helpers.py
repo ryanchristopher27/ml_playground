@@ -4,6 +4,7 @@ from torch.utils.data import Dataset
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import os
 from utils.plots import *   
+import pandas as pd
 
 def get_latest_version(path):
     """
